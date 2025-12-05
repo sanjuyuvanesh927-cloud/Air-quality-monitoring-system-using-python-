@@ -1,0 +1,109 @@
+
+---
+
+```markdown
+# 🌍 Air Quality Monitoring System Using Sensors
+
+A modular, real-time approach to environmental sensing using ESP32 and multiple sensors for comprehensive air quality assessment.
+
+---
+
+## 🚀 Features
+- Detects harmful gases (NH3, NOx, CO2, benzene, smoke, alcohol) using **MQ135**.
+- Monitors **temperature and humidity** with **DHT11**.
+- Measures **particulate matter (PM2.5, PM10)** using **GP2Y1010AU0F**.
+- Displays real-time results on a **0.96" OLED screen**.
+- Powered by **ESP32** with Wi-Fi/Bluetooth for IoT integration.
+- Modular breadboard setup for easy prototyping and expansion.
+
+---
+
+## 🛠️ Tech Stack
+- **Microcontroller:** ESP32  
+- **Sensors:** MQ135, DHT11, GP2Y1010AU0F  
+- **Display:** OLED SSD1306 (I2C)  
+- **Programming Language:** C++ / Arduino IDE  
+- **Connectivity:** Wi-Fi, Bluetooth (IoT-ready)
+
+---
+
+## 📂 Hardware Pin Configuration
+
+| Component              | Type   | Pin     | Function                          |
+|------------------------|--------|---------|-----------------------------------|
+| MQ135 Sensor           | Analog | GPIO34  | Air Quality (Gas) Reading         |
+| Dust Sensor (GP2Y1010) | Analog | GPIO35  | Dust/Particulate Measurement      |
+| OLED Display (SSD1306) | I2C    | GPIO21  | Data Line (SDA)                   |
+|                        | I2C    | GPIO22  | Clock Line (SCL)                  |
+| Power                  | VCC/GND| 3V3/GND | Common Power Supply               |
+
+---
+
+## ⚙️ Installation & Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/air-quality-monitoring.git
+   cd air-quality-monitoring
+   ```
+
+2. Install dependencies in Arduino IDE:
+   - ESP32 board support
+   - Adafruit SSD1306 & GFX libraries
+   - DHT sensor library
+
+3. Connect hardware as per pin configuration.
+
+4. Upload the code to ESP32 via Arduino IDE.
+
+---
+
+## 📊 Usage
+- Power on the ESP32 board.  
+- OLED display shows:
+  - Temperature & Humidity (DHT11)  
+  - Gas concentration (MQ135)  
+  - Dust/PM levels (GP2Y1010AU0F)  
+- Data can be extended to cloud logging or IoT dashboards.
+
+---
+
+## 📸 Prototype Setup
+- Breadboard integration for modular testing.  
+- Sensors connected to ESP32 analog/digital pins.  
+- OLED connected via I2C (SDA/SCL).  
+- Flexible design for calibration and expansion.
+
+---
+
+## 📈 Roadmap
+- [ ] Add cloud integration (Azure IoT Hub / Firebase).  
+- [ ] Implement AQI calculation for standardized reporting.  
+- [ ] Add mobile app dashboard.  
+- [ ] Enable automated alerts for critical thresholds.  
+
+---
+
+## 🤝 Contributing
+Contributions are welcome!  
+1. Fork the repo  
+2. Create a new branch (`feature-xyz`)  
+3. Commit changes  
+4. Open a Pull Request  
+
+---
+
+## 📜 License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙌 Acknowledgements
+- MQ135, DHT11, GP2Y1010AU0F sensor documentation  
+- ESP32 community resources  
+- Adafruit libraries for OLED display  
+```
+
+
+
+👉 Do you want me to also add a **“Demo”  or diagrams** so your GitHub page looks more visually engaging?
